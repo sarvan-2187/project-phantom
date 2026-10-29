@@ -39,3 +39,15 @@ python3 -m http.server 8080   # from the repository root
 - Shadows only on High. Quality changes to shadows apply on the next mission load.
 - Tested in headless Chromium (software GL); real-GPU performance was not benchmarked.
 - Balance (damage, detection, economy) is untuned beyond a few playthrough checks.
+
+## Comparison build
+
+`comparison/gemini/index.html` is an independent build of the same "Project Phantom" brief, supplied for side-by-side comparison (reported to be made by Gemini; not written by this project, included unmodified). Open `/comparison/gemini/index.html`.
+
+| | This build | Comparison build |
+|---|---|---|
+| Structure | `index.html`, `style.css`, `game.js` + 9 ES modules | single HTML file |
+| Size | about 4,000 lines of JS and CSS in 13 files | 5,275 lines, 168 KB |
+| Three.js | r128 from cdnjs | r128 from cdnjs, with an offline shim fallback |
+
+Both load and start in headless Chromium without console errors (checked once, menu to mission start only; the comparison build was not played further). No gameplay or quality ranking is claimed here.
