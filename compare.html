@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Phantom: Build Comparison</title>
+<style>
+  :root { --bg: #05080f; --panel: #0a1422; --line: rgba(51,224,255,.3); --c: #33e0ff; --t: #d8f4ff; --d: #7fa3b5; --g: #4dffa0; --y: #ffd23f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--t); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { margin: 0 0 4px; letter-spacing: .08em; } p.sub { color: var(--d); margin-top: 0; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); padding: 20px; border-radius: 6px; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; } .card p { color: var(--d); margin: 0 0 14px; font-size: 14px; }
+  a.btn { display: inline-block; padding: 10px 18px; background: rgba(51,224,255,.15); border: 1px solid var(--c); color: var(--t); text-decoration: none; border-radius: 4px; font-weight: 600; }
+  a.btn:hover, a.btn:focus-visible { background: var(--c); color: #021018; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); font-size: 14px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,.07); vertical-align: top; }
+  th { color: var(--c); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+  .yes { color: var(--g); } .no { color: var(--y); }
+  .note { color: var(--d); font-size: 13px; margin-top: 14px; }
+  @media (max-width: 600px) { th, td { padding: 7px 6px; font-size: 13px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>PROJECT PHANTOM</h1>
+  <p class="sub">Two independent builds of the same brief, side by side. Desktop browser, keyboard and mouse.</p>
+  <div class="cards">
+    <div class="card"><h2>Build A: Claude</h2><p>Multi-file: ES modules, procedural levels, grid AI.</p><a class="btn" href="index.html">Play Build A</a></div>
+    <div class="card"><h2>Build B: Gemini</h2><p>Single HTML file, supplied unmodified for comparison.</p><a class="btn" href="comparison/gemini/index.html">Play Build B</a></div>
+  </div>
+  <table>
+    <thead><tr><th>Feature</th><th>Build A</th><th>Build B</th></tr></thead>
+    <tbody>
+      <tr><td>Structure</td><td>13 files, about 4,000 lines</td><td>1 file, 5,275 lines</td></tr>
+      <tr><td>Missions named in source</td><td class="yes">3 (Blacksite Breach, Neon District, Orbital Silence)</td><td class="yes">3 (same titles)</td></tr>
+      <tr><td>Grid raycast line of sight and hitscan</td><td class="yes">Yes</td><td class="yes">Raycasting present</td></tr>
+      <tr><td>A* pathfinding</td><td class="yes">Yes, through doors</td><td class="no">Not found in source text</td></tr>
+      <tr><td>Enemy flanking</td><td class="yes">Elite Hunter flanks</td><td class="no">Not found in source text</td></tr>
+      <tr><td>Sentry turrets</td><td class="yes">Yes</td><td class="no">Not found in source text</td></tr>
+      <tr><td>Instanced meshes</td><td class="yes">Walls, props, strips</td><td class="no">Not found in source text</td></tr>
+      <tr><td>Real-time shadows</td><td class="yes">High quality setting</td><td class="no">Not found in source text</td></tr>
+      <tr><td>LocalStorage save, WebGL context-loss handling</td><td class="yes">Both</td><td class="yes">Both</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Method: this table comes from searching each build's source text and from one headless load of each (menu to mission start, no console errors). Build B was not played through, so "not found in source text" is not a claim that a feature is missing or broken. Judge the gameplay yourself by playing both.</p>
+</main>
+</body>
+</html>

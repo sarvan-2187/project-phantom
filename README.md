@@ -42,7 +42,7 @@ python3 -m http.server 8080   # from the repository root
 
 ## Comparison build
 
-`comparison/gemini/index.html` is an independent build of the same "Project Phantom" brief, supplied for side-by-side comparison (reported to be made by Gemini; not written by this project, included unmodified). Open `/comparison/gemini/index.html`.
+`comparison/gemini/index.html` is an independent build of the same "Project Phantom" brief, supplied for side-by-side comparison (reported to be made by Gemini; not written by this project, included unmodified). Open `/comparison/gemini/index.html`, or `/compare.html` for a side-by-side page with launch links and a feature table.
 
 | | This build | Comparison build |
 |---|---|---|
