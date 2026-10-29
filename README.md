@@ -1,5 +1,8 @@
 # Project Phantom
 
+<img width="1535" height="862" alt="image" src="https://github.com/user-attachments/assets/672178ab-dae0-4812-8042-dcfe77bb9bc8" />
+
+
 A futuristic first-person stealth shooter in plain HTML5, CSS3 and vanilla JavaScript (ES modules). 3D via Three.js r128 loaded from the cdnjs CDN. No build step, no backend.
 
 ## Run
